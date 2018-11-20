@@ -1,0 +1,5 @@
+# Record stats every 5 minutes (in binary)
+* * * * * root /usr/lib/sysstat/sa1 -S XALL 60 1
+
+# Generate a summary of stats (in plain text) every day at 11:55pm
+55 23 * * * root /usr/lib/sa/sa2 -A

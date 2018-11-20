@@ -1,0 +1,4 @@
+# Update the databases every minute
+* * * * * root /var/db/rrdtool/scripts/updates.sh
+# Generate graphs every 5 minutes
+*/5 * * * * root /var/db/rrdtool/scripts/graphs.sh
