@@ -6,6 +6,7 @@
 /var/db/rrdtool/scripts/varnish_graph.sh > /dev/null 2>> /var/db/rrdtool/error_log
 /var/db/rrdtool/scripts/apache_processes_graph.sh > /dev/null 2>> /var/db/rrdtool/error_log
 /var/db/rrdtool/scripts/apache_connections_graph.sh > /dev/null 2>> /var/db/rrdtool/error_log
+/var/db/rrdtool/scripts/apache_requests_graph.sh > /dev/null 2>> /var/db/rrdtool/error_log
 /var/db/rrdtool/scripts/php_processes_graph.sh > /dev/null 2>> /var/db/rrdtool/error_log
 /var/db/rrdtool/scripts/mem_graph.sh > /dev/null 2>> /var/db/rrdtool/error_log
 /var/db/rrdtool/scripts/mem2_graph.sh > /dev/null 2>> /var/db/rrdtool/error_log

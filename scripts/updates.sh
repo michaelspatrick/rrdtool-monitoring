@@ -5,6 +5,7 @@
 /var/db/rrdtool/scripts/varnish_update.sh > /dev/null 2>> /var/db/rrdtool/error_log
 /var/db/rrdtool/scripts/apache_processes_update.sh > /dev/null 2>> /var/db/rrdtool/error_log
 /var/db/rrdtool/scripts/apache_connections_update.sh > /dev/null 2>> /var/db/rrdtool/error_log
+/var/db/rrdtool/scripts/apache_requests_update.sh > /dev/null 2>> /var/db/rrdtool/error_log
 /var/db/rrdtool/scripts/php_processes_update.sh > /dev/null 2>> /var/db/rrdtool/error_log
 /var/db/rrdtool/scripts/net_update.sh > /dev/null 2>> /var/db/rrdtool/error_log
 /var/db/rrdtool/scripts/mem_update.sh > /dev/null 2>> /var/db/rrdtool/error_log
