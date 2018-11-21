@@ -5,13 +5,7 @@ source /etc/rrdtoolgraphs.conf
 DBFILE=$DBDIR/apache_requests.rrd
 COUNTERFILE=$DBDIR/apache_requests.counter.txt
 
-if [ -f $COUNTERFILE ]; then
-  LASTCOUNT=$(< $COUNTERFILE)
-else
-  LASTCOUNT=`wc -l $ACCESSLOG | sed 's/\([0-9]*\).*/\1/'`
-  echo $LASTCOUNT > $COUNTERFILE
-fi
-
+LASTCOUNT=$(< $COUNTERFILE)
 REQUESTS=`wc -l $ACCESSLOG | sed 's/\([0-9]*\).*/\1/'`
 echo $REQUESTS > $COUNTERFILE
 

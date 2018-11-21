@@ -3,6 +3,7 @@
 source /etc/rrdtoolgraphs.conf
 
 DBFILE=$DBDIR/apache_requests.rrd
+COUNTERFILE=$DBDIR/apache_requests.counter.txt
 
 NOW=`date +%s`
 
@@ -33,3 +34,6 @@ else
 
 	echo "file created: $DBFILE"
 fi
+
+LASTCOUNT=`wc -l $ACCESSLOG | sed 's/\([0-9]*\).*/\1/'`
+echo $LASTCOUNT > $COUNTERFILE
